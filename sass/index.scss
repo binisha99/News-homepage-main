@@ -145,9 +145,10 @@ p:first-child {
   color: colors.$Dark-grayish-blue;
 }
 
+
 @media (max-width: 768px) {
-  .menu {
-    display: none;
+  .menu{
+    // display:none;
     flex-direction: column;
     align-items: center;
     background-color: #333;
@@ -157,16 +158,22 @@ p:first-child {
     right: 0;
     z-index: 1;
   }
+    .show{
+      display:none;
+    }
+}
 
   .menu a {
     margin: 10px;
+    background-color: white;
+    color: black;
   }
 
   .hamburger {
     display: block;
     background: white;
   }
-}
+
 
 .big_text {
   width: max-width;
