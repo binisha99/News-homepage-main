@@ -1,13 +1,12 @@
-
-@use './colors.scss';
+@use "./colors.scss";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
 @mixin margin() {
-  margin-block:1.25rem;
+  margin-block: 1.25rem;
 }
-@mixin flex(){
+@mixin flex() {
   flex-basis: 50%;
 }
-@mixin displayflex(){
+@mixin displayflex() {
   display: flex;
   width: 80%;
   margin: 0 auto;
@@ -17,12 +16,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-body{
+body {
   min-height: 100vh;
-  font-family:"Inter",sans-serif;
+  font-family: "Inter", sans-serif;
 }
 .navbar {
-@include displayflex;
+  @include displayflex;
   justify-content: space-between;
   align-items: center;
   padding-block: 1.438rem;
@@ -50,33 +49,33 @@ body{
   font-size: 1.125rem;
   font-weight: 400;
 }
-.menu a:hover{
-  color:colors.$Soft-red;
+.menu a:hover {
+  color: colors.$Soft-red;
   transition: all 0.5s ease;
 }
 .neww {
-  a{
-  text-decoration: none;
-  color:colors.$Off-white;
-  font-weight: 700;
-  font-size: 20px;
-}
-:hover{
-color:colors.$Soft-orange;
-transition: all 0.5s ease;
-}
+  a {
+    text-decoration: none;
+    color: colors.$Off-white;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  :hover {
+    color: colors.$Soft-orange;
+    transition: all 0.5s ease;
+  }
 }
 .countdesc {
-  a{
-  color:colors.$Very-dark-blue;
+  a {
+    color: colors.$Very-dark-blue;
     font-size: 20px;
     font-weight: 700;
-    margin-block:0.688rem;
+    margin-block: 0.688rem;
     text-decoration: none;
   }
-  :hover{
+  :hover {
     transition: all 0.5s ease;
-    color:colors.$Soft-red;
+    color: colors.$Soft-red;
   }
 }
 
@@ -92,20 +91,19 @@ transition: all 0.5s ease;
   background-color: black;
 }
 .main_component {
-  
   width: 80%;
   margin: 0 auto;
 }
-  h2{
-    color:colors.$Soft-orange;
-    margin-block: 1.23rem;
-    font-weight: 800;
-    font-size: 1.688rem;
+h2 {
+  color: colors.$Soft-orange;
+  margin-block: 1.23rem;
+  font-weight: 800;
+  font-size: 1.688rem;
 }
-button{
+button {
   width: 150px;
   height: 46px;
-  color:colors.$Off-white;
+  color: colors.$Off-white;
   font-size: 15px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -114,37 +112,37 @@ button{
   text-transform: uppercase;
   background-color: colors.$Soft-red;
 }
-button:hover{
-  color:white;
+button:hover {
+  color: white;
   background-color: colors.$Very-dark-blue;
 }
 
-  .rightpara{
-    @include margin; 
-    color:colors.$Grayish-blue;
-  }
-  .horizontalline{
-    border-bottom: 2px solid colors.$Grayish-blue;
-        @include margin;
-    opacity: 0.5;
-  }
-h3{
-  color:colors.$Off-white;
+.rightpara {
+  @include margin;
+  color: colors.$Grayish-blue;
+}
+.horizontalline {
+  border-bottom: 2px solid colors.$Grayish-blue;
+  @include margin;
+  opacity: 0.5;
+}
+h3 {
+  color: colors.$Off-white;
 }
 h1 {
   color: colors.$Very-dark-blue;
   font-weight: 800;
-  font-size:2rem;
+  font-size: 2rem;
   @include margin;
 }
-.right_card{
-  margin-block:1.25rem;
+.right_card {
+  margin-block: 1.25rem;
   padding: 1.188rem;
-  background-color:colors.$blueish ;
+  background-color: colors.$blueish;
 }
-p:first-child{
+p:first-child {
   @include margin;
-  color:colors.$Dark-grayish-blue;
+  color: colors.$Dark-grayish-blue;
 }
 
 @media (max-width: 768px) {
@@ -170,13 +168,11 @@ p:first-child{
   }
 }
 
-.big_text{
-width:max-width;
+.big_text {
+  width: max-width;
 }
 
-
 .main_component {
-  
   width: 80%;
   margin: 0 auto;
 }
@@ -189,15 +185,15 @@ width:max-width;
 .top_left img {
   width: 100%;
 }
-.footer_container{
+.footer_container {
   width: 80%;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
 }
-.count{
-  color:colors.$Grayish-blue;
-  margin:0;
+.count {
+  color: colors.$Grayish-blue;
+  margin: 0;
 }
 // .countdesc{
 //   color:colors.$Very-dark-blue;
@@ -205,55 +201,54 @@ width:max-width;
 //   font-weight: 700;
 //   margin-block:0.688rem;
 // }
-.countpara{
-  color:colors.$Dark-grayish-blue;
+.countpara {
+  color: colors.$Dark-grayish-blue;
 }
-.footer_container{
-  gap:12px;
-  margin-block:2.188rem;
+.footer_container {
+  gap: 12px;
+  margin-block: 2.188rem;
 }
 .footer_column1 {
   display: grid;
   place-content: center;
 }
-.footer_column1 img{
+.footer_column1 img {
   width: 6.375rem;
   height: 8.188rem;
 }
 .footer_column2 {
-  margin:8px;
+  margin: 8px;
 }
 
-@media(min-width:780px){
+@media (min-width: 780px) {
   .main_component {
-  @include displayflex;
-    gap:1.688rem;
-    
+    @include displayflex;
+    gap: 1.688rem;
   }
-  .right_card{
-  margin:0;
-  width: 18.625rem;
+  .right_card {
+    margin: 0;
+    width: 18.625rem;
     padding: 1.188rem;
-    background-color:colors.$blueish ;
+    background-color: colors.$blueish;
   }
   .top_left img {
     width: 37.938rem;
     height: 15.625rem;
+  }
+  .left_card,
+  .right_card {
+    flex-basis: 50%;
+  }
+  .bottom_left {
+    display: flex;
+    margin-block: 0.75rem;
+  }
+  .big_text,
+  .description {
+    flex-basis: 50%;
+  }
+  .footer {
+    @include displayflex;
+    @include flex;
+  }
 }
-.left_card,.right_card{
-  flex-basis: 50%;
-}
-.bottom_left{
-display: flex;
-margin-block:0.75rem;  
-}
-.big_text,.description{
-  flex-basis: 50%;
-}
-.footer{
- @include displayflex;
- @include flex;
-}
-}
-
-
