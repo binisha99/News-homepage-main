@@ -167,7 +167,9 @@ p:first-child {
     z-index: 1;
   }
 }
-
+.mobile_menu{
+  display: none;
+}
 .mobile_menu.show {
   display: flex;
 }
